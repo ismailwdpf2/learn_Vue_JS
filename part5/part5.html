@@ -12,8 +12,10 @@
     <h2>
         Counter:{{ count }}
     </h2>
-    <button>Increment</button>
-    <button>Decrement</button>
+    <!-- <button @click="incre()">Increment</button> -->
+    <!-- <button @click="decre()">Decrement</button> -->
+    <button @click="count=count + 1">Increment</button>
+    <button @click="count=count - 1">Decrement</button>
 </div>
 
     <script src="app.js"></script>
