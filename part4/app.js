@@ -2,7 +2,10 @@ var app = Vue.createApp(
     {
         data(){
             return{
-                masg:"welcome ro vue js app"
+                Tutorial:{
+                    name: "vue js tutorial",
+                    gitlink: "https://github.com/ismailwdpf2"
+                }
             };
         }
     });

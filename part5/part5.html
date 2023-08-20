@@ -9,12 +9,11 @@
 </head>
 <body>
 <div id="app">
-    <h3>
-        welcome {{ Tutorial.name }}
-    </h3>
-    <h4> This is  my github link:
-        <a  v-bind:href="Tutorial.gitlink ">Github</a>
-    </h4>
+    <h2>
+        Counter:{{ count }}
+    </h2>
+    <button>Increment</button>
+    <button>Decrement</button>
 </div>
 
     <script src="app.js"></script>
