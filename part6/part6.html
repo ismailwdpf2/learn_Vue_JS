@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue js part 3</title>
+    <link rel="stylesheet" href="styel.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+    <h2>
+        Counter:{{ count }}
+    </h2>
+    <button @click="Increment(1,$event)">Increment</button>
+    <button @click="Decrement(1)">Decrement</button>
+    <button @click="count=count + 1">Increment</button>
+    <button @click="count=count - 1">Decrement</button> <hr>
+
+    <button @click="test($event)">Test</button>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

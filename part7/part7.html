@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vue js part 3</title>
+    <link rel="stylesheet" href="styel.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Type your name here!</h2>
+      <input type="text" @keyup="handlekey" />
+      <h2>Welcome {{ name }}</h2>
+      <br />
+      <form @submit.prevent = "handlesubmit">
+        Type and enter
+        <input type="text" @keyup.enter = "handlekey2"/>
+        <h2>Welcome {{ name2 }}</h2>
+        <button type="submit">Ok</button>
+      </form>
+      <hr>
+      <div class="card" @click="cardhandle">card
+        <button @click.="btnhandle">click&card</button>
+        <button @click.stop="btnhandle">click</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
