@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vue js part 3</title>
+    <link rel="stylesheet" href="styel.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h3>Enter Number</h3>
+      <!-- <input type="text" @input="handleinput" :value="num" /> <br /> (menual) -->
+      <input type="text" v-model.number="num" /> <br /> <!-- v-model -->
+      <button @click="getdubble">Get Dubble</button>
+      <button @click="getsqure">Get Squre</button>
+      <button @click="reset">Get Reset</button> <br />
+      <label for="">Enter Number: </label>{{ num }}
+      <br />
+      <label for="">Result: </label>{{ result }}
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
