@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vue js part 3</title>
+    <link rel="stylesheet" href="styel.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <button :class="{active:activeclass=='red'}" @click="setclass('red')">red</button>
+      <button :class="{active:activeclass=='blue'}" @click="setclass('blue')">blue</button>
+      <button :class="{active:activeclass=='green'}" @click="setclass('green')">green</button>
+      <button :class="['button','active']">active</button>
+      <div :class="activeclass">item</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
